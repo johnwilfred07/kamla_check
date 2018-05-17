@@ -40,7 +40,7 @@ public class Sub_Frag_type extends Fragment implements Inter_adap {
     private void addValues() {
         ary_type=new ArrayList<>();
         for (int i=0;i<30;i++){
-            ary_type.add("TYPE :"+i);
+            ary_type.add("apocalypto GOBI :"+i);
         }
     }
 

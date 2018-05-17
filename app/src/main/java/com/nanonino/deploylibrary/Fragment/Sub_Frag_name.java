@@ -49,7 +49,7 @@ public class Sub_Frag_name extends Fragment implements Inter_adap {
     private void addValues() {
         ary_name=new ArrayList<>();
         for (int i=0;i<30;i++){
-            ary_name.add("NAME :"+i);
+            ary_name.add("apocalypto GOBI :"+i);
         }
     }
 

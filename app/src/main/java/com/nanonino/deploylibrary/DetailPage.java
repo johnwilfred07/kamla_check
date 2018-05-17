@@ -17,7 +17,7 @@ public class DetailPage extends AppCompatActivity {
         if (getIntent()!=null){
             if (getIntent().getExtras()!=null){
                 if (getIntent().getExtras().getString("content")!=null){
-                    txt_content.setText(getIntent().getExtras().getString("content"));
+                    txt_content.setText(getIntent().getExtras().getString("content")+"\n"+"GOBI APIRL FOOL");
                 }
             }
         }
