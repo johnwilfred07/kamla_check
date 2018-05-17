@@ -50,10 +50,10 @@ public class Adap_name extends RecyclerView.Adapter<Adap_name.ViewHolder> {
 
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
-                case R.id.Id_txt:
-                    objInterAdap.clicked(getAdapterPosition());
-                    break;
+            int i = view.getId();
+            if (i == R.id.Id_txt) {
+                objInterAdap.clicked(getAdapterPosition());
+
             }
         }
     }

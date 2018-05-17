@@ -41,18 +41,18 @@ public class Login extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.Id_login_btn_login:
-                if (getActivity()!=null){
-                    getActivity().getSupportFragmentManager().beginTransaction().addToBackStack(Login.class.getName()).add(R.id.Id_frame,new Menu()).commit();
-                }
-                break;
-            case R.id.Id_login_btn_register:
-                if (getActivity()!=null){
-                    Intent intent=new Intent(getActivity(), Register.class);
-                    startActivity(intent);
-                }
-                break;
+        int i = view.getId();
+        if (i == R.id.Id_login_btn_login) {
+            if (getActivity() != null) {
+                getActivity().getSupportFragmentManager().beginTransaction().addToBackStack(Login.class.getName()).add(R.id.Id_frame, new Menu()).commit();
+            }
+
+        } else if (i == R.id.Id_login_btn_register) {
+            if (getActivity() != null) {
+                Intent intent = new Intent(getActivity(), Register.class);
+                startActivity(intent);
+            }
+
         }
     }
 }
